@@ -1,10 +1,10 @@
-# 📚 BookStore API Automation Project
+#  BookStore API Automation Project
 
 This project automates REST API testing for a BookStore application using Java, RestAssured, TestNG, Cucumber, and Allure Reports for reporting.
 
 ---
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 | Component | Version | Purpose                   |
 | --------- | ------- | ------------------------- |
@@ -15,17 +15,17 @@ This project automates REST API testing for a BookStore application using Java, 
 | RestAssured | 5.4.0   | Simplified API testing using Java |
 | Allure Reports | 2.24.0  | Generate beautiful test reports |
 
-🧪 Why **Allure** reports
+##   Why **Allure** reports
 
-✅ API Testing (RestAssured) → Shows cURL requests & responses.
+-  API Testing (RestAssured) → Shows cURL requests & responses.
 
-✅ Failures in CI → Easy drill-down with screenshots & logs.
+-  Failures in CI → Easy drill-down with screenshots & logs.
 
-✅ Large Test Suites → Grouping, filtering, defect mapping.
+-  Large Test Suites → Grouping, filtering, defect mapping.
 
-✅ Test Metrics Reporting → Trends, duration, flaky detection.
+-  Test Metrics Reporting → Trends, duration, flaky detection.
 
-👉 **TestNG** is a better fit because:
+##  Why **TestNG** is a better fit because:
 
 - Allure integrates more robustly.
 
@@ -35,7 +35,7 @@ This project automates REST API testing for a BookStore application using Java, 
 
 
 
-## ⚙️ Prerequisites
+##  Prerequisites
 
 - Java 21 installed and added to PATH
 - Maven installed and added to PATH
@@ -43,7 +43,7 @@ This project automates REST API testing for a BookStore application using Java, 
 
 ---
 
-## 🧪 How to set up and  Run Tests
+##  How to set up and  Run Tests
 
 1) Create a new maven project for automation or clone from the github if already present
 2) Fork the Dev repo given and make it up in the local machine , to run the automation (The steps will be present in README.md of Dev repo)
@@ -61,9 +61,9 @@ This project automates REST API testing for a BookStore application using Java, 
 7) Once done , Allure- reports will be generate and can be seen under Allure-reports/allure-results
 
 
-# **🚀 CI/CD Integration**
+# ** CI/CD Integration**
 
-## **✅ Prerequisites:**
+## **Prerequisites:**
 
 Install Jenkins and necessary plugins - Git ,Github,Pipeline , Maven and Allure plugins ( these plugins can be installed via Jenkins UI )
 
