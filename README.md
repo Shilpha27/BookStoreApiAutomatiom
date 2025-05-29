@@ -6,31 +6,34 @@ This project automates REST API testing for a BookStore application using Java, 
 
 ## 🚀 Tech Stack
 
+| Component | Version | Purpose                   |
+| --------- | ------- | ------------------------- |
+| Java      | 21      | Core programming language |
+| Maven | Latest (compatible with Java 21) | Project build lifecycle & dependency management |
+| TestNG   | Latest  | Test execution and suite configuration |
+| Cucumber | 7.x     | BDD (Behavior-Driven Development)      |
+| RestAssured | 5.4.0   | Simplified API testing using Java |
+| Allure Reports | 2.24.0  | Generate beautiful test reports |
 
-- **Java 21**
-- **Maven**
-- **TestNG**
-- **RestAssured**
-- **Cucumber**
-- **Allure Reports**
+🧪 Why **Allure** reports
 
----
+✅ API Testing (RestAssured) → Shows cURL requests & responses.
 
-## 📁 Project Structure
+✅ Failures in CI → Easy drill-down with screenshots & logs.
 
-├── src/
-│ ├── test/
-│ │ ├── java/
-│ │ │ ├── Steps/ # Step definitions
-│ │ │ ├── Hooks/ # Hooks (Before/After)
-│ │ │ └── Runner/ # Test Runner
-│ └── resources/
-│ └── features/ # Gherkin feature files
-├── pom.xml # Maven dependencies
-└── README.md # Project info
+✅ Large Test Suites → Grouping, filtering, defect mapping.
+
+✅ Test Metrics Reporting → Trends, duration, flaky detection.
+
+👉 **TestNG** is a better fit because:
+
+- Allure integrates more robustly.
+
+- TestNG + Cucumber gives better control over test grouping, parallelism, and execution flow.
+
+- You'll benefit from TestNG’s native support for dependencies, retries, and configuration.
 
 
----
 
 ## ⚙️ Prerequisites
 
@@ -54,8 +57,8 @@ This project automates REST API testing for a BookStore application using Java, 
     * GET /books – Fetch all books
     * DELETE /books/{id} – Delete a book
 
-6) Execute the automation suite by running the Cucumber Runner. This will trigger all feature scenarios written in a human-readable format, ensuring comprehensive test coverage and clear visibility into the executed test cases.
-7) Once done , Allure- reports will be generate and can be seen under target/allure-results
+6) Execute the automation suite by running the **testng.xml** file. This will trigger all feature scenarios written in a human-readable format, ensuring comprehensive test coverage and clear visibility into the executed test cases.
+7) Once done , Allure- reports will be generate and can be seen under Allure-reports/allure-results
 
 
 # **🚀 CI/CD Integration**
@@ -87,3 +90,4 @@ Ngrok (for development purpose)
 8) It will generate the url , use that as payload url along with repo name (eg : https://gitUserName:gitPassword@ngrokServerProvided/job/DevRepo/build )//Replace with your dev repo name
 9) Now commit any changes in Dev repo . The build will be triggered in Dev jenkins job and on success,QA automation job will be run and generate Allure report at last
 10) Now for every commit dev makes , the Dev build and QA automation will get triggered .
+

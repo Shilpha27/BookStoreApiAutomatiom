@@ -7,6 +7,6 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
         glue = {"Steps","Hooks"},
         plugin = {"pretty","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"},
         tags = "")
-public class CucumberRunner extends AbstractTestNGCucumberTests {
+public class TestNGRunner extends AbstractTestNGCucumberTests {
 }
 
